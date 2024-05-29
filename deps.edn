@@ -1,0 +1,2 @@
+{:aliases { :cider-cljs { :main-opts ["-m" "nrepl.cmdline" "--middleware"
+   "[cider.nrepl/cider-middleware,cider.piggieback/wrap-cljs-repl]"]}}}

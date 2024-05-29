@@ -3,7 +3,7 @@
 
 (defn click-counter [click-count]
   [:div
-   "The atom " [:code "click-count"] " has value: "
+   "The thing " [:code "click-count"] " has value: "
    @click-count ". "
    [:input {:type "button" :value "Click me!"
             :on-click #(swap! click-count inc)}]])
@@ -12,6 +12,13 @@
 
 (defn hello []
   [:<>
-   [:p "Hello, cljs-scratch is running!"]
+   [:p "Hello, cljs-s is running!" (str (+ 1 1))]
    [:p "Here's an example of using a component with state:"]
    [click-counter click-count]])
+
+(comment
+
+                                        ;
+
+  (+ 1 1)
+  )
